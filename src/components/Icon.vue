@@ -29,6 +29,23 @@
       :fill="color ? color : '#101010'"
     />
   </svg>
+  <svg
+    v-if="icon === 'dot'"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    aria-hidden="true"
+    role="img"
+    class="iconify iconify--ci"
+    width="32"
+    height="32"
+    preserveAspectRatio="xMidYMid meet"
+    viewBox="0 0 24 24"
+  >
+    <path
+      :fill="color ? color : '#101010'"
+      d="M12 18a6 6 0 1 1 0-12a6 6 0 0 1 0 12Z"
+    ></path>
+  </svg>
 </template>
 
 <script setup>
