@@ -74,6 +74,11 @@ nav > ul > li {
   transition: 0.5s ease;
 }
 
+.btn:is(:hover, :focus, :focus-visible) {
+  filter: contrast(0.8);
+  transition: 0.5ms;
+}
+
 .hero {
   height: 600px;
   background-image: url("./assets/hero-frida.png");
