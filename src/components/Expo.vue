@@ -1,14 +1,16 @@
 <script setup>
 import Icon from "./Icon.vue";
 import { ref } from "vue";
-
+import expo1 from "../assets/expo1.png";
+import expo2 from "../assets/expo2.png";
+import expo3 from "../assets/expo3.png";
 const actualExpoIndex = ref(0);
 const expositions = [
   {
     id: 0,
     title: "Les impressionnistes au-delà des normes",
     date: "Du 23 août au 26 novembre",
-    image: "/src/assets/expo1.png",
+    image: expo1,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe",
   },
@@ -16,7 +18,7 @@ const expositions = [
     id: 1,
     title: "Exposition Ray Charles",
     date: "Du 15 décembre au 2 février",
-    image: "/src/assets/expo2.png",
+    image: expo2,
     description:
       "Pa alias quaerat qui rerum voluptatem sed galisum inventore et eius possimus aut perferendis quod qui iste veniam. Qui sint voluptas sit expedita autem non consequuntur adipisci. Aut aliquam dolorum 33 nihil esse non facilis blanditiis At adipisci repudiandae. Ut similique aspernatur est susc",
   },
@@ -24,7 +26,7 @@ const expositions = [
     id: 2,
     title: "La vie de Frida Kahlo",
     date: "Du 4 mars au 12 juin",
-    image: "/src/assets/expo3.png",
+    image: expo3,
     description:
       "Et laudantium incidunt qui quaerat esse est atque eius qui reiciendis rerum ad reprehenderit sunt! Non sunt quia At quam recusandae ad perspiciatis voluptates qui voluptas incidunt eum galisum quia aut",
   },
@@ -32,7 +34,7 @@ const expositions = [
     id: 3,
     title: "Les impressionnistes au-delà des normes",
     date: "Du 23 août au 26 novembre",
-    image: "/src/assets/expo1.png",
+    image: expo1,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe",
   },
@@ -40,7 +42,7 @@ const expositions = [
     id: 4,
     title: "Les impressionnistes au-delà des normes",
     date: "Du 23 août au 26 novembre",
-    image: "/src/assets/expo1.png",
+    image: expo1,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe",
   },
