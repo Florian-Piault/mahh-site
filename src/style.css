@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-gold: #d3b67d;
+  --color-blue: #5a65d1;
+  --color-red: #d16465;
+  --color-green: #84d1c5;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  margin-bottom: 5rem;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav > ul > li {
+  margin-left: 1rem;
+  list-style-type: none;
+}
+
+.langs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--color-gold);
+  color: black;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.btn-light {
+  padding: 0 0.25rem;
+}
+
+.btn-selected {
+  color: var(--color-gold);
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+  transition: 0.5s ease;
+}
+
+.hero {
+  height: 600px;
+  background-image: url("./assets/hero-frida.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2rem;
+  padding-right: 5rem;
+  margin-bottom: 5rem;
+}
+
+.title,
+.slogan {
+  color: white;
+  font-style: italic;
+  text-align: end;
+}
+
+.slogan {
+  font-weight: lighter;
+}
+
+.hero > h1 > em {
+  color: var(--color-gold);
+}
