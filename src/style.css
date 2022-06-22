@@ -54,6 +54,7 @@ nav > ul > li {
   background-color: transparent;
   padding: 0.5rem 1rem;
   gap: 1rem;
+  color: black;
 }
 
 .btn-primary {
