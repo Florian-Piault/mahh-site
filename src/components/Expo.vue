@@ -30,22 +30,6 @@ const expositions = [
     description:
       "Et laudantium incidunt qui quaerat esse est atque eius qui reiciendis rerum ad reprehenderit sunt! Non sunt quia At quam recusandae ad perspiciatis voluptates qui voluptas incidunt eum galisum quia aut",
   },
-  {
-    id: 3,
-    title: "Les impressionnistes au-delà des normes",
-    date: "Du 23 août au 26 novembre",
-    image: expo1,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe",
-  },
-  {
-    id: 4,
-    title: "Les impressionnistes au-delà des normes",
-    date: "Du 23 août au 26 novembre",
-    image: expo1,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe",
-  },
 ];
 
 const nextExpo = () =>
@@ -81,7 +65,7 @@ const prevExpo = () =>
     </div>
   </div>
   <div class="pagination">
-    <button class="btn btn-light" @click="prevExpo">
+    <button class="btn btn-light" data-direction="left" @click="prevExpo">
       <Icon icon="arrow-left" color="#5a65d1" />
     </button>
     <div class="dots">
@@ -92,7 +76,7 @@ const prevExpo = () =>
         :color="actualExpoIndex === exposition.id ? '#d3b67d' : '#5a65d1'"
       />
     </div>
-    <button class="btn btn-light" @click="nextExpo">
+    <button class="btn btn-light" data-direction="right" @click="nextExpo">
       <Icon icon="arrow-right" color="#5a65d1" />
     </button>
   </div>
@@ -103,9 +87,10 @@ const prevExpo = () =>
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 5rem;
-  height: 80vh;
+  height: auto;
 }
 
 h2 {
@@ -146,10 +131,9 @@ b {
 }
 
 .expo-img {
-  /* background-image: url("../assets/expo1.png"); */
   background-size: cover;
   background-position: center;
-  height: 35vw;
+  aspect-ratio: 6/8;
   width: 30vw;
   border-top-left-radius: 100vmax;
   border-top-right-radius: 100vmax;
@@ -161,7 +145,7 @@ b {
 }
 
 .card {
-  width: 80%;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -182,10 +166,47 @@ b {
   font-size: 1rem;
 }
 
+.btn-light {
+  transition: 0.5s;
+}
+
+.btn[data-direction="left"]:hover {
+  transform: translateX(-20px);
+  transition: 0.5s;
+}
+.btn[data-direction="right"]:hover {
+  transform: translateX(20px);
+  transition: 0.5s;
+}
+
 .pagination {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 600px) {
+  .expo {
+    flex-direction: column;
+  }
+  .left {
+    margin-left: 1em;
+    width: 100vw;
+  }
+  .right {
+    margin-right: 1em;
+    width: 100vw;
+    justify-content: center;
+  }
+  .card,
+  .btn-secondary {
+    margin: 1rem;
+  }
+  .expo-img {
+    width: 100vw;
+    margin: 0 5rem;
+  }
 }
 </style>

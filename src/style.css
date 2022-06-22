@@ -80,7 +80,7 @@ nav > ul > li {
 }
 
 .hero {
-  height: 600px;
+  aspect-ratio: 16/9;
   background-image: url("./assets/hero-frida.png");
   background-size: cover;
   background-position: center;
