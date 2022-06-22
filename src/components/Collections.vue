@@ -150,7 +150,7 @@ h2 {
   justify-content: flex-start;
   margin-bottom: 5rem;
   height: auto;
-  width: clamp(25%, 30rem, 90vw);
+  width: clamp(20vw, 25rem, 90%);
 }
 
 .image {
@@ -159,6 +159,10 @@ h2 {
   background-repeat: no-repeat;
   aspect-ratio: 16 / 9;
   width: 100%;
+}
+
+.collection:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 600px) {
