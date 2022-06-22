@@ -77,6 +77,7 @@ section {
   color: white;
   width: 92px;
   align-self: end;
+  margin-left: 1rem;
 }
 .mentions {
   grid-column-start: 1;
