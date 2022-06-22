@@ -10,7 +10,11 @@
     <div class="carrousel">
       <div v-for="celebrite in celebrites" :key="id" class="card">
         <div>
-          <img :src="celebrite.image" :alt="'Image de ' + celebrite.name" />
+          <img
+            class="images"
+            :src="celebrite.image"
+            :alt="'Image de ' + celebrite.name"
+          />
           <p class="name">{{ celebrite.name }}</p>
         </div>
       </div>
@@ -78,10 +82,15 @@ section > button {
   font-style: normal;
 }
 .title > h1 {
-  font-size: 68px;
+  font-size: 4.25rem;
+}
+@media (max-width: 600px) {
+  .title > h1 {
+    font-size: 2.25rem;
+  }
 }
 .title > p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 .carrousel {
   display: flex;

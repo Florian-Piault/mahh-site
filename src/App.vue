@@ -4,6 +4,7 @@ import Hero from "./components/Hero.vue";
 import Expo from "./components/Expo.vue";
 import Explorer from "./components/Explorer.vue";
 import Collections from "./components/Expo.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
@@ -11,4 +12,5 @@ import Collections from "./components/Expo.vue";
   <Hero />
   <Expo />
   <Explorer />
+  <Footer />
 </template>
