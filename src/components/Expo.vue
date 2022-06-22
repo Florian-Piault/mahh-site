@@ -187,5 +187,6 @@ b {
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  margin-bottom: 5rem;
 }
 </style>
