@@ -5,6 +5,7 @@ import Expo from "./components/Expo.vue";
 import Explorer from "./components/Explorer.vue";
 import Footer from "./components/Footer.vue";
 import Collections from "./components/Collections.vue";
+import GoToTopButton from "./components/GoToTopButton.vue";
 </script>
 
 <template>
@@ -14,4 +15,5 @@ import Collections from "./components/Collections.vue";
   <Explorer />
   <Collections />
   <Footer />
+  <GoToTopButton />
 </template>

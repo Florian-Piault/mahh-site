@@ -88,6 +88,9 @@ const collections = [
       </div>
     </div>
   </div>
+  <div class="action">
+    <button class="btn btn-tertiary">Voir plus</button>
+  </div>
 </template>
 
 <style scoped>
@@ -177,5 +180,12 @@ h2 {
   .right {
     justify-content: flex-start;
   }
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
 }
 </style>
