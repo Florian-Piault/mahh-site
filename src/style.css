@@ -54,6 +54,7 @@ nav > ul > li {
   background-color: transparent;
   padding: 0.5rem 1rem;
   gap: 1rem;
+  color: black;
 }
 
 .btn-primary {
@@ -80,7 +81,7 @@ nav > ul > li {
 }
 
 .hero {
-  height: 600px;
+  aspect-ratio: 16/9;
   background-image: url("./assets/hero-frida.png");
   background-size: cover;
   background-position: center;
