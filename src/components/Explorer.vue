@@ -8,7 +8,7 @@
       </p>
     </div>
     <div class="carrousel">
-      <div v-for="celebrite in celebrites" :key="id" class="card">
+      <div v-for="celebrite in celebrites" :key="celebrite.id" class="card">
         <div>
           <img
             class="images"

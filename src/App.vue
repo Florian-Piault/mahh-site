@@ -3,8 +3,8 @@ import Header from "./components/Header.vue";
 import Hero from "./components/Hero.vue";
 import Expo from "./components/Expo.vue";
 import Explorer from "./components/Explorer.vue";
-import Collections from "./components/Expo.vue";
 import Footer from "./components/Footer.vue";
+import Collections from "./components/Collections.vue";
 </script>
 
 <template>
@@ -13,4 +13,5 @@ import Footer from "./components/Footer.vue";
   <Expo />
   <Explorer />
   <Footer />
+  <Collections />
 </template>
