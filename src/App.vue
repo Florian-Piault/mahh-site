@@ -12,6 +12,6 @@ import Collections from "./components/Collections.vue";
   <Hero />
   <Expo />
   <Explorer />
-  <Footer />
   <Collections />
+  <Footer />
 </template>
