@@ -97,6 +97,7 @@ h2 {
   font-weight: 500;
   font-size: 2.25rem;
   margin-bottom: 2rem;
+  margin-right: 2rem;
 }
 b {
   color: var(--color-blue);
