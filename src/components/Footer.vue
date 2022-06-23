@@ -38,6 +38,18 @@
         <input type="text" name="newsletter" id="newsletter" />
       </div>
     </div>
+    <div class="logo">
+      <Icon icon="logo" />
+      <p>Musée d’Art et d’Histoire du Handicap</p>
+    </div>
+    <div class="mentions">
+      <p>Mentions légales</p>
+      <p>Données personnelles</p>
+      <p>Cookies</p>
+      <p>Accessibilité</p>
+      <p>Crédits</p>
+      <p>Crédits photographiques</p>
+    </div>
   </section>
 </template>
 <style scoped>
@@ -46,13 +58,38 @@ section {
   background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
-  grid-template-rows: 2fr 0.8fr 0.2fr;
+  grid-template-rows: 1fr 83px 0.4fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     ". . ."
     ". . ."
     ". . .";
+}
+.logo {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  justify-self: center;
+  display: inline-flex;
+  align-self: end;
+}
+.logo > p {
+  color: white;
+  width: 92px;
+  align-self: end;
+  margin-left: 1rem;
+}
+.mentions {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  color: white;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  justify-content: end;
+}
+.mentions > p {
+  margin-left: 5rem;
 }
 .menu {
   color: white;
@@ -75,6 +112,7 @@ section {
 .reseaux > .follow > .icons {
   display: flex;
   gap: 1.5rem;
+  margin-bottom: 3.125rem;
 }
 </style>
 <script setup>
